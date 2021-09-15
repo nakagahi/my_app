@@ -32,7 +32,7 @@ export default function CurriculumCard() {
           image="https://thumb.ac-illust.com/58/584a8069f9e442127766cbc26ee82e62_t.jpeg"
         />
       <CardActions>
-        <Button size="small" color="primary">
+        <Button variant="contained" color="primary">
             職務経歴書を作成する
         </Button>
       </CardActions>
