@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import '../css/main.css'
 import Button from './Button'
 import SpacingGrid from './Grid'
+import Spiner from './Spiner'
 const Main = () => {
     const [content, setContent] = useState('');
 

@@ -17,6 +17,9 @@ const useStyles = makeStyles({
   media: {
     height: 200,
   },
+  button: {
+    textAlign: 'center'
+  }
 });
 
 export default function ResumeCard() {
@@ -32,7 +35,7 @@ export default function ResumeCard() {
           image="https://thumb.ac-illust.com/58/584a8069f9e442127766cbc26ee82e62_t.jpeg"
         />
       <CardActions>
-        <Button variant="contained" color="primary">
+        <Button variant="contained" color="primary" className={classes.button}>
           履歴書を作成する
         </Button>
       </CardActions>
