@@ -1,0 +1,21 @@
+.profileDivNone{
+    display: none;
+}
+
+
+.profile{
+    margin: auto 0;
+}
+
+.nameField {
+    margin-right: 20px !important;
+    margin-bottom: 30px !important;
+}
+
+.ageField {
+    margin-top: 30px !important;
+}
+
+.buttonField{
+    margin-top: 20px !important;
+}
