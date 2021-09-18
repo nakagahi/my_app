@@ -1,5 +1,4 @@
 import ActionTypes from "./action";
-import produce from "immer"
 export interface MyInfoType {
 //ここにstoreが持つstateを書く
     name: string,
