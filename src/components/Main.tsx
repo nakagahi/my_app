@@ -2,7 +2,32 @@
 import '../css/main.css'
 import Button from './Button'
 import SpacingGrid from './Grid'
+import axios from 'axios'
+import {useState, useEffect} from 'react'
+
+interface IUser{
+    last_name: string,
+    first_name: string,
+    last_name_kana: string,
+    first_name_kana: string,
+    birthday: string,
+    gender: string
+}
+
+
+
 const Main = () => {
+
+    const [users, setUsers] = useState<IUser[]>([])
+
+    useEffect(() => {
+        axios.get('http://127.0.0.1:8000/api/resume')
+        .then(res => {
+            setUsers(res.data)
+        })
+    }, [])
+
+
     return(
         <>
             <div className="top-wrapper">
@@ -11,6 +36,7 @@ const Main = () => {
                     <p>自宅でも外出先でも、必要なときにいつでも履歴書を作成できます。</p>
                     <p>作成した履歴書は、ダウンロードが可能です。(Excel)</p>
                     <Button />
+
                 </div>
             </div>
             <div className="contents">
